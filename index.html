@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Florelle | Where Every Flower Tells a Story</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+        <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Favicon -->
+     <!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="images/favicon-removebg-preview.png">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <!-- Top Header -->
+        <div class="top-header">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">🌸</span>
+                <span>Florelle</span>
+            </a>
+
+            <!-- Dynamic Date & Time -->
+            <div class="datetime">
+                <i class="fa-regular fa-clock"></i>
+                <div id="time"></div>
+<div id="date"></div>
+            </div>
+
+        </div>
+
+
+        <!-- Sticky Navigation -->
+        <nav class="navbar">
+
+            <div class="nav-container">
+
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#products">Flowers</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <!-- Shopping Cart -->
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cartCount" class="cart-badge">0</span>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    WELCOME TO FLORELLE
+                </p>
+
+                <h1>
+                    Where Every Flower
+                    <span>Tells a Story</span>
+                </h1>
+
+                <p class="hero-text">
+                    Discover beautiful fresh flowers and elegant bouquets
+                    carefully arranged to make every special moment memorable.
+                </p>
+
+                <a href="#products" class="hero-btn">
+                    Explore Collection
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section id="products" class="products-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    OUR COLLECTION
+                </p>
+
+                <h2>Fresh Flowers</h2>
+
+                <p>
+                    Explore our collection of beautiful flowers,
+                    bouquets and floral arrangements.
+                </p>
+
+            </div>
+
+            <!-- Products will be generated using JavaScript -->
+            <div id="productsContainer" class="products-container"></div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="about-section">
+
+            <div class="about-image">
+
+                <img
+                    src="https://img.magnific.com/premium-photo/beautiful-flowers-background-wedding-scene_42044-1928.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt="Beautiful flower arrangement">
+
+            </div>
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    ABOUT FLORELLE
+                </p>
+
+                <h2>
+                    Flowers That Speak From The Heart
+                </h2>
+
+                <p>
+                    At Florelle, we believe flowers can express emotions
+                    that words sometimes cannot. Our flowers are carefully
+                    selected to bring freshness, beauty and happiness
+                    to every occasion.
+                </p>
+
+                <p>
+                    From romantic roses to cheerful sunflowers,
+                    every arrangement is prepared with care and attention
+                    to detail.
+                </p>
+
+                <div class="about-features">
+
+                    <div>
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>Fresh Flowers</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-truck"></i>
+                        <span>Fast Delivery</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Made With Love</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="contact-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
+
+                <h2>Contact Florelle</h2>
+
+                <p>
+                    Have a question or want a special flower arrangement?
+                    Send us a message.
+                </p>
+
+            </div>
+
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your Name"
+                        required>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your Email"
+                        required>
+
+                </div>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Your Message"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Column 1 -->
+            <div class="footer-column">
+
+                <a href="#home" class="footer-logo">
+                    🌸 Florelle
+                </a>
+
+                <p>
+                    Bringing beauty and happiness to your special
+                    moments with fresh and beautiful flowers.
+                </p>
+
+                <p class="copyright">
+                    &copy;
+                    <span id="currentYear"></span>
+                    Florelle. All Rights Reserved.
+                </p>
+
+            </div>
+
+
+            <!-- Column 2 -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#products">Flowers</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Column 3 -->
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                </div>
+
+
+                <h3 class="newsletter-title">
+                    Newsletter
+                </h3>
+
+                <form class="newsletter" id="newsletterForm">
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        required>
+
+                    <button type="submit">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            Made with
+            <i class="fa-solid fa-heart"></i>
+            by Florelle
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
+
